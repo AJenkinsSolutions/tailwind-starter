@@ -7,10 +7,29 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Animation</title>
   </head>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: {
+            'spin-slow' : 'spin 3s linear infinite',
+            wiggle: 'wiggle 1s ease-in-out infinite '
+          },
+          Keyframes: {
+            wiggle: {
+              '0%, 100%': { transform: 'rotate(-12deg)'},
+              '50': { transform: 'roatate(20deg)'}
+            }
+          }
+
+        }
+      }
+    }
+  </script>
   <body>
     <div class="flex items-center justify-center min-h-screen bg-slate-900">
       <svg
-        class="w-48 text-white"
+        class="animate-spin-slow w-48 text-white"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
