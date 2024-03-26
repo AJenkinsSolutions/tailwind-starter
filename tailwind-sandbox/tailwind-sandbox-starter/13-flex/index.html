@@ -9,10 +9,104 @@
   </head>
   <body>
     <!-- Flex and alignment -->
+    <div class="flex flex-col md:flex-row bg-gray-100">
+      <div class="p-10 border border-blue-300 bg-blue-100">01</div>
+      <div class="p-10 border border-blue-300 bg-blue-100">02</div>
+      <div class="p-10 border border-blue-300 bg-blue-100">03</div>
+      <div class="p-10 border border-blue-300 bg-blue-100">04</div>
+    </div>
+
+    <div class="flex items-start h-72 w-full bg-gray-100">
+      <div class="p-10 border border-red-300 bg-red-100">ITEMS START</div>
+      <div class="p-10 border border-red-300 bg-red-100">02</div>
+      <div class="p-10 border border-red-300 bg-red-100">03</div>
+      <div class="p-10 border border-red-300 bg-red-100">04</div>
+    </div>
+    
+    <div class="flex items-center h-72 w-full bg-gray-100">
+      <div class="p-9 border border-red-300 bg-red-100">ITEMS CENTER</div>
+      <div class="p-10 border border-red-300 bg-red-100">02</div>
+      <div class="p-10 border border-red-300 bg-red-100">03</div>
+      <div class="p-10 border border-red-300 bg-red-100">04</div>
+    </div>
+
+    <div class="flex items-end h-72 w-full bg-gray-100">
+      <div class="p-10 border border-red-300 bg-red-100">ITEMS END</div>
+      <div class="p-10 border border-red-300 bg-red-100">02</div>
+      <div class="p-10 border border-red-300 bg-red-100">03</div>
+      <div class="p-10 border border-red-300 bg-red-100">04</div>
+    </div>
+
+    <div class="flex items-center justify-between h-72 w-full bg-gray-100">
+      <div class="p-10 border border-cyan-300 bg-cyan-100">justify-between</div>
+      <div class="p-10 border border-cyan-300 bg-cyan-100">02</div>
+      <div class="p-10 border border-cyan-300 bg-cyan-100">03</div>
+      <div class="p-10 border border-cyan-300 bg-cyan-100">04</div>
+    </div>
+
+    <div class="flex items-center justify-center h-72 w-full bg-gray-100">
+      <div class="p-10 border border-cyan-300 bg-cyan-100">justify-center</div>
+      <div class="p-10 border border-cyan-300 bg-cyan-100">02</div>
+      <div class="p-10 border border-cyan-300 bg-cyan-100">03</div>
+      <div class="p-10 border border-cyan-300 bg-cyan-100">04</div>
+    </div>
+
+    <div class="flex items-center justify-end -72 w-full bg-gray-100">
+      <div class="p-10 border border-cyan-300 bg-cyan-100">justify-end</div>
+      <div class="p-10 border border-cyan-300 bg-cyan-100">02</div>
+      <div class="p-10 border border-cyan-300 bg-cyan-100">03</div>
+      <div class="p-10 border border-cyan-300 bg-cyan-100">04</div>
+    </div>
+
+    <div class="flex items-center justify-evenly -72 w-full bg-gray-100">
+      <div class="p-10 border border-cyan-300 bg-cyan-100">justify-evenly</div>
+      <div class="p-10 border border-cyan-300 bg-cyan-100">02</div>
+      <div class="p-10 border border-cyan-300 bg-cyan-100">03</div>
+      <div class="p-10 border border-cyan-300 bg-cyan-100">04</div>
+    </div>
 
     <!-- Flex Column, Gap and Order -->
 
+    <div class="flex flex-wrap items-center justify-between h-72 w-full bg-gray-100">
+      <div class="p-10 border border-yellow-300 bg-yellow-100">flex wrap</div>
+      <div class="p-10 border border-yellow-300 bg-yellow-100">02</div>
+      <div class="p-10 border border-yellow-300 bg-yellow-100">03</div>
+      <div class="p-10 border border-yellow-300 bg-yellow-100">04</div>
+      <div class="p-10 border border-yellow-300 bg-yellow-100">03</div>
+      <div class="p-10 border border-yellow-300 bg-yellow-100">04</div>
+      <div class="p-10 border border-yellow-300 bg-yellow-100">03</div>
+      <div class="p-10 border border-yellow-300 bg-yellow-100">04</div>
+      <div class="p-10 border border-yellow-300 bg-yellow-100">04</div>
+      <div class="p-10 border border-yellow-300 bg-yellow-100">03</div>
+      <div class="p-10 border border-yellow-300 bg-yellow-100">04</div>
+    </div>
+
+    <div class="flex flex-col items-center justify-evenly h-72 w-full bg-gray-100">
+      <div class="p-10 border border-cyan-300 bg-cyan-100">flex-col</div>
+      <div class="p-10 border border-cyan-300 bg-cyan-100">02</div>
+      <div class="p-10 border border-cyan-300 bg-cyan-100">03</div>
+      <div class="p-10 border border-cyan-300 bg-cyan-100">04</div>
+    </div>
+    <div class="flex flex-col items-center justify-evenly h-72 w-full bg-gray-100">
+      <div class="p-10 order-1 border border-cyan-300 bg-cyan-100">Order</div>
+      <div class="p-10 order-4 border border-cyan-300 bg-cyan-100">02</div>
+      <div class="p-10 border order-3 border-cyan-300 bg-cyan-100">03</div>
+      <div class="p-10 border order-2 border-cyan-300 bg-cyan-100">04</div>
+    </div>
+
+
     <!-- Grow and shrink -->
+    <div class="flex w-full bg-gray-100">
+      <div class="p-10 W-64 border-cyan-300 bg-cyan-100">GROW & SHRINK </div>
+      <div class="p-10 W-64 border-cyan-300 bg-cyan-100">01</div>
+      <div class="p-10 W-64 border-cyan-300 bg-cyan-100">02</div>
+      <div class="p-10 W-64 border-cyan-300 bg-cyan-100">03</div>
+      <div class="p-10 border-cyan-300 bg-cyan-100">04</div>
+      <div class="p-10 border-cyan-300 bg-cyan-100">05</div>
+      <div class="p-10 border-cyan-300 bg-cyan-100">06</div>
+      <div class="p-10 border-cyan-300 bg-cyan-100">07</div>
+    </div>
+
   </body>
 </html>
 
